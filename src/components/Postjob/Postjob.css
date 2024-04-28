@@ -1,0 +1,87 @@
+.post-container{
+    /* position: fixed; */
+    /* top: 55%;
+    left: 50%; */
+    transform: translate(13%,20%);
+    border: 1px solid rgb(135, 133, 133);
+    padding: 20px;
+    min-width: 500px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.crossicon{
+    display: flex;
+    justify-content: right;
+}
+.jobcol{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.inputfields{
+    margin-top:10px;
+    width: 100%;
+}
+.inputfields label{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+}
+.inputfields input{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    outline: none;
+}
+.options{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.inputtextarea{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.post-container .postbtn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+} 
+.postbtn button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    width: 100px;
+    &:hover{
+        color: white;
+        background-color: gray;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .jobcol{
+        display:flex;
+        flex-direction: column;
+    }
+    .post-container{
+        min-width: 400px;
+        width: 80%;
+        padding: 30px;
+    }
+}

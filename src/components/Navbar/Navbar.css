@@ -1,0 +1,58 @@
+
+.navbar{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.navbar-list{
+    display: flex;
+    font-size: 20px;
+    gap: 100px;
+    font-weight:bolder;
+    color: rgb(131, 131, 131);
+}
+.navbar-list .link{
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    &:hover{
+        color: white;
+    }
+}
+.logo h1{
+    color: rgb(130, 129, 129);
+    cursor: pointer;
+}
+.logo h1:hover{
+ color: white;
+}
+.navbar-list div:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.auth button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(131, 131, 131); 
+    cursor: pointer;
+    border: 1px solid rgb(131, 131, 131);
+    background-color: white; 
+}
+.auth button:hover{
+    color:white;
+    background-color:   rgb(213, 209, 209);
+}
+
+.fa-search{
+
+    margin-left: 10px;
+}

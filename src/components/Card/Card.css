@@ -1,0 +1,176 @@
+.card-container{
+    /* border: 1px solid rgb(131, 131, 131); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 400px;
+    padding: 20px;
+    color: gray;
+    overflow-y: auto;
+}
+
+
+.card-container:hover{
+    border: 1px solid white;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
+    color: rgb(255, 255, 255);
+    /* cursor: pointer; */
+}
+.verticon:hover{
+    cursor: pointer;
+}
+.card-container:hover h1{
+    color: rgb(255, 255, 255);
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    color: rgb(97, 95, 95);
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+}
+li{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.card-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.card-button button{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(99, 98, 98);
+    background-color: white;
+    cursor: pointer;
+    &:hover{
+        color:white;
+        background-color: gray;
+    }
+}
+
+
+.blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(125, 125, 125, 0.7);
+    z-index: 5;
+}
+
+.fulldetails-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index:999;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 10px;   
+    min-width: 450px;
+    width: 70%;
+}
+
+/* .blur,
+.fulldetails-container{
+    overflow-y: hidden;
+} */
+
+.crossicon{
+    cursor: pointer;
+}
+
+.fulldetails-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.fulldetails-container:hover h1{
+    color: white;
+} 
+.fulldetails-container:hover .label{
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+}
+.popup-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comname{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
+/* .comname p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+} */
+.jobdetails{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.jobdetails .label{
+    color: gray;
+}
+.jobdetails .labelans{
+    font-weight: bold;
+    color: gray;
+}
+.description{
+    font-size: 18px;
+    color: gray;
+}
+
+.popup-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact{
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.popup-button button{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(99, 98, 98);
+    background-color: white;
+    cursor: pointer;
+    &:hover{
+        color:white;
+        background-color: gray;
+    }
+}
