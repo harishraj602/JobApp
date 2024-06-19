@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Postjob.css'
 import { useNavigate } from 'react-router-dom'
 import api from '../../api/ApiUrl'
+import { toast } from 'react-toastify'
 
 
 const options = {
@@ -42,12 +43,12 @@ const Postjob = () => {
         {
              const responsedata= await api.post("job/savejob",jobdata)
              if(responsedata.data.includes("saved"))
-             alert("job saved successfully")
+            toast.success("job saved successfully")
              setJobdata(modalobj)
              navigate("/home")
         }
         else{
-            alert("Please fill all the fields")
+            toast.error("Please fill all the fields")
             return
         }
     }

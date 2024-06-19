@@ -1,7 +1,14 @@
+.home-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rebeccapurple, rgb(197, 138, 255));
+}
 .card{
     margin-top: 150px;
     margin-bottom: 100px;
-    /* margin-left: 50px; */
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -24,16 +31,9 @@
     gap: 20px;
 }
 
-@media screen and (max-width:600px) {
-    .search-inputs{
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-    }
-}
 
 .search-inputs input{
-    border: 2px solid gray;
+    border: none;
     font-size: 18px;
     padding: 10px;
     border-radius: 10px;
@@ -46,12 +46,20 @@
     padding: 10px;
     font-size: 18px;
     border-radius: 10px;
-    color: gray;
+    color: rebeccapurple;
     background-color: white;
     font-weight: bold;
     cursor: pointer;
     &:hover{
-        background-color: gray;
-        color: white;
+        color:white;
+        background: linear-gradient(to right, rebeccapurple, white);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .search-inputs{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
     }
 }

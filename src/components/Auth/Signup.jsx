@@ -38,7 +38,7 @@ const Signup = () => {
                         username:username,
                         password:password,
                     }
-                    const postdata=await api.post('/user/saveuser',userdata)
+                    const postdata=await api.post('/user/signupAuth',userdata)
                     alert("Account Created Successfully")
                     setUsername('')
                     setPassword('')

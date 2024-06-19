@@ -13,6 +13,7 @@
    /* max-height: 500px; */
    justify-content: space-between;
    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   background-color: rebeccapurple;
 }
 .inputfields{
     display: flex;
@@ -35,11 +36,12 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid gray;
+    border:none;
     font-weight: bold;
     color: rgb(255, 255, 255);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rebeccapurple;
 }
 .login-container button:hover{
     background-color: white;
@@ -53,6 +55,7 @@
 }
 .signup p{
     font-size: 20px;
+    color: white;
 }
 .link{
     text-decoration: none;

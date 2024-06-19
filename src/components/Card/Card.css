@@ -1,20 +1,21 @@
 .card-container{
-    /* border: 1px solid rgb(131, 131, 131); */
+    background: rebeccapurple;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 10px;
-    max-width: 400px;
-    min-width: 400px;
+    width: 400px;
+    width: 400px;
     padding: 20px;
-    color: gray;
+    color: rgb(255, 255, 255);
     overflow-y: auto;
 }
-
 
 .card-container:hover{
     border: 1px solid white;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
-    color: rgb(255, 255, 255);
-    /* cursor: pointer; */
+    
+}
+.card-container h1{
+    color: white;
 }
 .verticon:hover{
     cursor: pointer;
@@ -26,6 +27,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &:hover{
+        cursor: pointer;
+    }
 }
 h1{
     color: rgb(97, 95, 95);
@@ -56,10 +60,10 @@ li{
     cursor: pointer;
     &:hover{
         color:white;
-        background-color: gray;
+        border: 1px solid white;
+        background: linear-gradient(to right, rebeccapurple, white);
     }
 }
-
 
 .blur{
     position: fixed;
@@ -67,7 +71,7 @@ li{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(125, 125, 125, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     z-index: 5;
 }
 
@@ -77,73 +81,53 @@ li{
     justify-content: space-between;
     position: fixed;
     z-index:999;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto; */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 20px;
     border-radius: 10px;   
-    min-width: 450px;
+    width: 450px;
     width: 70%;
+    background-color: rebeccapurple;
+    color: white;
+}
+.fulldetails-container p,h1,h2,label{
+    color: white;
 }
 
-/* .blur,
-.fulldetails-container{
-    overflow-y: hidden;
-} */
 
 .crossicon{
     cursor: pointer;
 }
 
 .fulldetails-container:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: 1px solid white;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
 }
-.fulldetails-container:hover h1{
-    color: white;
-} 
-.fulldetails-container:hover .label{
-    color: rgb(109, 109, 109);
-    font-weight: bold;
-}
+
 .popup-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.comname{
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-    gap: 10px;
-    color: gray;
-}
-/* .comname p{
+.comname p{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(80, 80, 80);
-} */
+    color: rgb(255, 255, 255);
+}
 .jobdetails{
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
 }
-.jobdetails .label{
-    color: gray;
-}
+
 .jobdetails .labelans{
     font-weight: bold;
-    color: gray;
 }
 .description{
     font-size: 18px;
-    color: gray;
 }
 
 .popup-button{
@@ -154,23 +138,33 @@ li{
 }
 
 .contact{
-    color: gray;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     gap: 10px;
 }
 .popup-button button{
     outline: none;
-    border: none;
+    border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
-    color: rgb(99, 98, 98);
+    color: rebeccapurple;
     background-color: white;
     cursor: pointer;
     &:hover{
         color:white;
-        background-color: gray;
+        background: linear-gradient(to right, rebeccapurple, white);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .card-container{
+        width: 350px;
+        height: 270px;
+    }
+    .fulldetails-container{
+        width: 350px;
     }
 }

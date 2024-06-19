@@ -63,27 +63,28 @@ const Home = ({isopen,handleOpen}) => {
 
 
   return (
-    <div className='card'>
-      {isopen&&
-      <div className='search'>
-        <div className='search-inputs'>
-          <input type="text" name='jobName' placeholder='Job' value={jobName} onChange={(e)=>setJobName(e.target.value)}/>
-          <input type="text" name='companyName' placeholder='Company' value={companyName} onChange={(e)=>setCompanyname(e.target.value)} />
-          <input type="text" name='location' placeholder='location' value={location} onChange={(e)=>setLocation(e.target.value)}/>
-          <input type="text" name='jobType' placeholder='jobType' value={jobType} onChange={(e)=>setJobType(e.target.value)}/>
-          <input type="text" name='technology' placeholder='technology' value={technology} onChange={(e)=>setTechnology(e.target.value)}/>
-          <button onClick={()=>{handleSubmit();handleOpen()}}>Search</button>
-        </div>
-      </div>}
+    <div className="home-container">
+      <div className='card'>
+        {isopen&&
+        <div className='search'>
+          <div className='search-inputs'>
+            <input type="text" name='jobName' placeholder='Job' value={jobName} onChange={(e)=>setJobName(e.target.value)}/>
+            <input type="text" name='companyName' placeholder='Company' value={companyName} onChange={(e)=>setCompanyname(e.target.value)} />
+            <input type="text" name='location' placeholder='location' value={location} onChange={(e)=>setLocation(e.target.value)}/>
+            <input type="text" name='jobType' placeholder='jobType' value={jobType} onChange={(e)=>setJobType(e.target.value)}/>
+            <input type="text" name='technology' placeholder='technology' value={technology} onChange={(e)=>setTechnology(e.target.value)}/>
+            <button onClick={()=>{handleSubmit();handleOpen()}}>Search</button>
+          </div>
+        </div>}
 
-      {
-      !isopen&&
-      datajob.map((jobdata,index)=>(
-           <Card jobdata={jobdata} key={index} handleDelete={handleDelete}/>
-      ))
-      }
-     
-    
+        {
+        !isopen&&
+        datajob.map((jobdata,index)=>(
+            <Card jobdata={jobdata} key={index} handleDelete={handleDelete}/>
+        ))
+        }
+
+      </div>
     </div>
   )
 }

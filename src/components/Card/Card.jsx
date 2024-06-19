@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './Card.css'
 import { useNavigate } from 'react-router-dom'
 
-const ITEM_HEIGHT=48;
 
 const Card = ({jobdata,handleDelete}) => {
     const navigate=useNavigate();
@@ -15,15 +14,19 @@ const Card = ({jobdata,handleDelete}) => {
         setShowmodal(!showmodal);
     }
 
+    const handleclick=()=>{
+      navigate("/apply")
+    }
+
   return (
     <div className={showmodal?"blur":'none'}>
      
      {!showmodal?(
         <div className="card-container" >
 
-            <div className='card-header'>
+            <div className='card-header' onClick={()=>handlechange()}>
               <h1>{jobdata.jobName}</h1>
-              <i onClick={()=>handlechange()} className="fa-solid fa-ellipsis-vertical verticon"></i>
+              <i  className="fa-solid fa-ellipsis-vertical verticon"></i>
             </div>
 
             <p>{jobdata.companyName}</p>
@@ -51,7 +54,7 @@ const Card = ({jobdata,handleDelete}) => {
                   </div>
                 </div>
 
-                <div className='comname'>
+                <div className='comname jobdetails'>
                   <p className='label'>Company:</p>
                   <h2>{jobdata.companyName}</h2>
                 </div>
@@ -90,7 +93,7 @@ const Card = ({jobdata,handleDelete}) => {
                     <i className="fa-solid fa-phone"></i>
                     <p>{jobdata.phoneNumber}</p>
                   </div>
-                  <button>Apply Now</button>
+                  <button onClick={()=>handleclick()}>Apply Now</button>
                 </div>
                 
             </div>

@@ -1,4 +1,6 @@
-
+.fix{
+    width: 100%;
+}
 .navbar{
     z-index: 1000;
     position: fixed;
@@ -9,31 +11,25 @@
     padding: 20px;
     align-items: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: rebeccapurple;
+    color: white;
 }
 .navbar-list{
     display: flex;
     font-size: 20px;
     gap: 100px;
     font-weight:bolder;
-    color: rgb(131, 131, 131);
 }
 .navbar-list .link{
     text-decoration: none;
     font-size: 20px;
-    color: gray;
-    &:hover{
-        color: white;
-    }
 }
 .logo h1{
-    color: rgb(130, 129, 129);
     cursor: pointer;
+    color: white;
 }
-.logo h1:hover{
- color: white;
-}
+
 .navbar-list div:hover{
-    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -42,17 +38,79 @@
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-    color:rgb(131, 131, 131); 
     cursor: pointer;
-    border: 1px solid rgb(131, 131, 131);
+    border: 1px solid rgb(255, 255, 255);
     background-color: white; 
+    color: rebeccapurple;
 }
 .auth button:hover{
     color:white;
-    background-color:   rgb(213, 209, 209);
+    background: linear-gradient(to right, rebeccapurple, white);
 }
 
 .fa-search{
 
     margin-left: 10px;
+}
+.ham-icon{
+    display: none;
+}
+.ham-no{
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+  
+    .navbar-list{
+        display: none;
+    }
+  
+    .ham-list{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        background-color: rgb(199, 186, 212);
+        width: 150px;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-list1{ 
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 18px;
+    }
+    .one{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .two{
+        display: flex;
+        justify-content: space-around;
+    }
+    .auth1{
+        display: flex;
+        justify-content: right;
+    }
+    .auth1 button{
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        justify-content: right;
+    }
+    .ham-icon{
+        display: block;
+    }
+    .ham-no{
+        display: none;
+    }
+    .no-log{
+        display: none;
+    }
+    
 }

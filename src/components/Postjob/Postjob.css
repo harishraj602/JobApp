@@ -1,7 +1,5 @@
 .post-container{
-    /* position: fixed; */
-    /* top: 55%;
-    left: 50%; */
+    background-color: rebeccapurple;
     transform: translate(13%,20%);
     border: 1px solid rgb(135, 133, 133);
     padding: 20px;
@@ -13,6 +11,7 @@
 .crossicon{
     display: flex;
     justify-content: right;
+    color: white;
 }
 .jobcol{
     display: flex;
@@ -28,7 +27,7 @@
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(114, 114, 114);
+    color: rgb(255, 255, 255);
 }
 .inputfields input{
     font-size: 18px;
@@ -62,15 +61,15 @@
 .postbtn button{
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid gray;
-    color: gray;
+    border: 1px solid rgb(255, 255, 255);
     font-weight: bold;
     font-size: 15px;
+    color: rebeccapurple;
     background-color: white;
     width: 100px;
     &:hover{
-        color: white;
-        background-color: gray;
+        color:white;
+        background: linear-gradient(to right, rebeccapurple, white);
     }
 }
 
