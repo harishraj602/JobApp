@@ -13,6 +13,6 @@ public interface UserService {
 
 	void saveUser(User user);
 
-	String passcheck(String username,String password);
+//	String passcheck(String username,String password);
 
 }

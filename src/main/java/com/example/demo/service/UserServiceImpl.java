@@ -35,17 +35,19 @@ public class UserServiceImpl implements UserService{
 		
 	}
 
-	@Override
-	public String passcheck(String username,String password) {
-		Optional<User>user= userrepo.getByUsername(username);
-		if(user.isPresent())
-		{
-			if(user.get().getPassword().equals(password))
-				return "matched";
-			else
-				return "unmatched";
-		}
-		return "no user found";
-	}
+//	@Override
+//	public String passcheck(String username,String password) {
+//		Optional<User>user= userrepo.getByUsername(username);
+//		if(user.isPresent())
+//		{   
+//			System.out.println("entered: "+user.get().getPassword());
+//			System.out.println("stored: "+password);
+//			if(user.get().getPassword().equals(password))
+//				return "matched";
+//			else
+//				return "unmatched";
+//		}
+//		return "no user found";
+//	}
 
 }
